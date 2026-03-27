@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "c62cf155-22af-4034-9270-4ccb3f88d929",
+		"name": "AuraX APIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. Get Recommendations (Multimodal)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"query\": \"Rainy day cozy cafe vibe sweater\",\n    \"image_url\": \"\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/recommend",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"recommend"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2. Get Area Demand Forecast",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/forecast/110001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"forecast",
+						"110001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "3. Get Inventory Agent Logs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/inventory/agent-logs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"inventory",
+						"agent-logs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
