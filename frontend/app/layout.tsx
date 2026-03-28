@@ -1,8 +1,9 @@
 import '../styles/globals.css'
 
 export const metadata = {
-  title: 'AuraX Dashboard',
+  title: 'AuraX App',
   description: 'AI-Powered Hyper-Local Fashion Intelligence',
+  viewport: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0',
 }
 
 export default function RootLayout({
